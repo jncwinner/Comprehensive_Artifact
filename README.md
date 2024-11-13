@@ -7,10 +7,6 @@ This repository provides a new approach to partition large scale connected/disco
 database structures and a loader for proper graph formating. The Algorithm included is an implementation of SIR-GN that utilizes a higher-order Weisfiler Lehman, 2 dimensional FWL. The cost of higher-order approaches, tend to outweigh
 the improvements in expresivity power. This is why, with the application of graph partitioning, we can still operate on very large graphs. 
 
-    correct sentence: "There weren't many waitresses sitting down."
-    incorrect sentence: "There weren't all waitresses sitting down."
-
-The model is assessed to be correct if it scores the correct sentence with a higer probability than the incorrect one. BLiMP was originally conceived as an unsupervised task to test NLP models without the use of fine-tuning. The ELECTRA model's novel pretraining method, however, is not readily compatible with the original evaluation strategy used in BLiMP. Therefore this program runs BLiMP with only minimal fine-tuning by default, using only 10 percent of the data for training, in order to apply the task as closely as possible to its original conception. Currently, this program only supports pytorch implementations of the ELECTRA transformer model. 
 
 ## Requirements
 
